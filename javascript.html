@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        // cometario de 1 linha
+
+        /*
+            multiplas linhas
+        */
+        var nome = "Edir"; // texto ou string
+        var idade = 23; // number integer
+        var peso = 43.2; // number float
+        var acordado = true; // boolean
+
+        //alert("Olá " + nome + "!!");
+
+        // E -> P -> S
+        // IO
+
+
+        /*
+            ifs 
+
+            == igualdade
+            != diferente
+            > maior
+            < menor
+            >= maior ou igual
+            <= menor ou igual
+
+        */
+
+        function exibir()
+        {            
+            var nome = prompt("Digite seu nome");
+
+            console.log("Oi "+ nome +"!!!");    
+        }
+
+        function soma()
+        {
+            var n1 = prompt("digite o numero 1");
+            var n2 = prompt("digite o numero 2");
+
+            var resultado = parseInt(n1) + parseInt(n2);
+
+            console.log(resultado);
+        }
+
+        function adulto()
+        {
+            var idade = prompt("Qual a sua idade?");
+
+            if (idade < 13)
+            {
+                if (idade < 2)
+                {
+                    console.log("bebe");
+                } else 
+                {
+                    console.log("criança")
+                }
+            } else if( idade > 60) 
+            {
+                console.log("idoso");
+            } else 
+            {
+                console.log("adulto")
+            }
+        }
+
+        function numero()
+        {
+            var n1 = prompt("digite o numero 1");
+            var n2 = prompt("digite o numero 2");
+
+            if (n1 > n2)
+            {
+                console.log("o valor " + n1 + "é o maior");
+            } else 
+            {
+                console.log("o valor de " + n2 + "é o maior");
+            }
+        }
+        
+
+    </script>
+
+</head>
+<body>
+    <!-- comentario -->
+    <h1>Javascript</h1>
+
+    <button onclick="exibir()">Abrir</button>
+    <button onclick="soma()">Somar 2 numeros</button>
+    <button onclick="adulto()">Idade</button>
+    <button onclick="numero()">numero maior</button>
+    <button >numero maior e o menor de 3</button>
+
+
+</body>
+</html>
