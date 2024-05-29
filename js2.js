@@ -60,3 +60,14 @@ function letra()
 
     console.log(novo);
 }
+
+function contagem()
+{
+    var ini = parseInt(valor.value);
+
+    while (ini >= 0) 
+    {
+        console.log(ini);
+        ini = ini - 1;   
+    }
+}
