@@ -37,3 +37,26 @@ while (ini <= fim)
 
     ini = ini + 1; // 3
 }
+
+function oi()
+{
+
+    console.log(valor.value);
+}
+
+function maiusculas() 
+{
+    var texto = valor.value;
+    console.log( texto.toUpperCase() );   
+}
+
+function letra()
+{
+    var texto = valor.value;
+    var letra = texto.charAt(0);
+    var resto = texto.substring(1);
+
+    var novo = letra.toUpperCase() + resto.toLowerCase();
+
+    console.log(novo);
+}
