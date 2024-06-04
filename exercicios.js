@@ -67,5 +67,42 @@ function ex31Alt()
     {
         resposta.innerHTML = "Valor invalido";
     }
+}
 
+function ex54()
+{
+    var ini = 1;
+    var fim = 50;
+
+    while(ini < fim)
+    {
+        resposta.innerHTML +=  ini + "  ";
+        ini += 2;
+    }
+}
+
+function ex54Alt()
+{    
+    var fim = 50;
+
+    for (var ini = 1; ini <= fim; ini += 1)
+    {
+        if ( (ini % 2) == 0)
+        {
+            resposta.innerHTML +=  ini + " -> Par  ";
+        } else {
+            resposta.innerHTML +=  ini + " -> Impar  ";
+        }
+    }
+}
+
+function ex89()
+{
+    var texto = entrada.value;
+    var fim = 0;
+
+    for (var ini = texto.length; ini >= fim; ini -= 1)
+    {
+        resposta.innerHTML += texto.charAt(ini);
+    }
 }
