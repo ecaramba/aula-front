@@ -133,3 +133,40 @@ function ex97A()
     console.log(notas)
     
 }
+
+function ex97()
+{
+    var media = [];
+    var alunos = [
+        "Ana", 
+        "Pedro", 
+        "Paulo", 
+        "João", 
+        "Maria", 
+        "Luiza", 
+        "Daniele",
+        "Marcos",
+        "Michele",
+        "Leandro" 
+    ];
+    
+    for (var i = 0; i < 2; i += 1)
+    {
+        var nota1 = prompt("digite a nota 1 do aluno: "+ alunos[i]);
+        var nota2 = prompt("digite a nota 2 do aluno: "+ alunos[i]);
+        var nota3 = prompt("digite a nota 3 do aluno: "+ alunos[i]);
+        var nota4 = prompt("digite a nota 4 do aluno: "+ alunos[i]);
+        
+        var valor = (parseFloat(nota1) + parseFloat(nota2) 
+            + parseFloat(nota3) + parseFloat(nota4)) / 4;
+
+        media.push(valor);
+    }
+
+    for (var i = 0; i < 10; i += 1)
+    {
+        resposta.innerHTML += "Aluno: " + alunos[i] + " Media: " + media[i] + "<br>";
+    }
+    
+    
+}
