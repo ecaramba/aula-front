@@ -106,3 +106,30 @@ function ex89()
         resposta.innerHTML += texto.charAt(ini);
     }
 }
+
+// peça a nota de 10 alunos e diga qual foi a maior nota
+function ex97A()
+{
+    var notas = [];
+    var alunos = [
+        "Ana", 
+        "Pedro", 
+        "Paulo", 
+        "João", 
+        "Maria", 
+        "Luiza", 
+        "Daniele",
+        "Marcos",
+        "Michele",
+        "Leandro" 
+    ];
+    
+    for (var i = 0; i < 10; i += 1)
+    {
+        var valor = prompt("digite a nota do aluno: "+ alunos[i]);
+        notas.push(valor);
+    }
+
+    console.log(notas)
+    
+}
