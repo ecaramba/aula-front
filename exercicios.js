@@ -10,6 +10,7 @@ function ex22()
      else {
         resposta.innerHTML = "A letra é consoante";
     }
+
     
 }
 
