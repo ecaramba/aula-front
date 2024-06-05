@@ -15,6 +15,20 @@
             color: red;
         }
      
+        .campo {
+            margin: 6px 0;
+        }
+        .campo label {
+            width: 100px;
+            display: inline-block;
+        }
+        .campo input, .campo select {
+            width: 200px;
+        }
+        .erro {
+            color: red;
+            border: 1px solid red;
+        }
     </style>
 
 </head>
@@ -27,6 +41,22 @@
     <h3>Titulo 1</h3>
     <h3 class="vermelho">Titulo 2</h3>
     <h3>Titulo 3</h3>
+
+    <fieldset>
+        <div class="campo">
+            <label>Nome</label>
+            <input  id="nome" type="text" />
+        </div>
+        <div class="campo">
+            <label>Sexo</label>
+            <select id="sexo">
+                <option></option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </div>
+        <button class="bt">Enviar</button>
+    </fieldset>
     
 </body>
 </html>
