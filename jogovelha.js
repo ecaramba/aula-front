@@ -6,7 +6,7 @@ $(document).ready(function(){
         0,0,0,
         0,0,0,
         0,0,0
-    ]
+    ];
 
     // var posibilidades = [
     //     [1, 2, 3],
